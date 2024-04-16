@@ -1,0 +1,906 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+
+:root { 
+    --bg : #FFFF;
+
+    --weeding-font : "Amethysta", serif;
+    --header-font : "Imperial Script", cursive;
+    --about-font : "Inika", serif;
+    --info-font : "Courgette", cursive;
+    --info2-font : "Imprima", sans-serif;
+    --akhir-font : "Inter", sans-serif;
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: var(--about-font);
+    min-height: 200px;
+    overflow-x: hidden; 
+    overflow-y: scroll; /* Izinkan overflow vertical */
+}
+
+
+.hero::before {
+    content: -100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: -100%;
+    background-image: url('/img/bacground.png'); /* Update path gambar */
+}
+
+.hero {
+    background-image: url('/img/bacground.png'); /* Update path gambar */
+}
+
+
+.hero h4 {
+    min-height: 100vh;
+    font-size: 1.5rem;
+    position: relative;
+    left: -330px;
+    top: 150px;
+}
+
+.hero main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero main h3 {
+    position: relative;
+    font-size: 4rem;
+    top: -470px;
+    left: -340px;
+    font-family: var(--header-font);
+}
+.hero main .divider {
+    position: absolute;
+    font-size: 4rem;
+    top: 270px;
+    left: 420px;
+    transform: translateX(-50%);
+}
+
+.hero main .Eleina {
+    position: absolute;
+    font-size: 4rem;
+    top: 320px;
+    left: 450px;
+}
+
+.hero main .name img.Burung {
+    position: absolute;
+    top: 10px; /* Sesuaikan jarak vertikal dari teks */
+    left: 340px; /* Pusatkan gambar horizontal */
+    transform: translateX(-50%);
+    z-index: 1; /* Pastikan gambar berada di atas teks */
+    width: 200px; /* Atur lebar gambar */
+    height: auto; /* Biarkan tinggi gambar mengikuti proporsi aslinya */
+}
+.hero main .name img.Daun {
+    position: absolute;
+    top: 230px; /* Sesuaikan jarak vertikal dari teks */
+    left: 170px; /* Pusatkan gambar horizontal */
+    transform: translateX(-50%);
+    z-index: 1; /* Pastikan gambar berada di atas teks */
+    width: 350px; /* Atur lebar gambar */
+    height: auto; /* Biarkan tinggi gambar mengikuti proporsi aslinya */
+}
+.hero main .name img.pengantin {
+    position: absolute;
+    top: 50px; /* Sesuaikan jarak vertikal dari teks */
+    right: 30px; /* Pusatkan gambar horizontal */
+    transform: translateX(-50%);
+    z-index: 1; /* Pastikan gambar berada di atas teks */
+    width: 400px; /* Atur lebar gambar */
+    height: auto; /* Biarkan tinggi gambar mengikuti proporsi aslinya */
+}
+ /* Halaman 2 */
+.left-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 330px;
+    height: auto;
+}
+.left-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 330px;
+    height: auto;
+}
+.center {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0; /* Mengatur posisi horizontal di tengah */
+    width: 500px;
+    height: auto;
+    margin: 0 auto; /* Mengatur margin menjadi auto untuk memposisikan di tengah */
+}
+
+.about {
+    /* background-color: #000; */
+    position: relative;
+    height: 190vh;
+    background-size: cover;
+}
+
+#about p {
+    text-align: center; /* Mengatur teks untuk selalu berada di tengah secara horizontal */
+    margin-bottom: 280px;
+
+}
+.about .text {
+    padding-top: 180px; /* Sesuaikan jarak vertikal dari atas */
+}
+
+
+
+.keluarga1 {
+    margin-top: -200px; /* Sesuaikan jarak atas */
+}
+
+.keluarga1 h3 {
+    font-size: 4.5rem;
+    margin-left: -600px;
+    font-family: var(--header-font);
+}
+.keluarga1 h4 {
+    margin: 0; /* Menghapus margin default */
+    margin-left: -600px;
+    font-family: var(--about-font);
+}
+
+.keluarga1 .putri {
+    margin-top: 10px; /* Sesuaikan jarak antara nama dan Putri Tercinta */
+}
+
+div img {
+    position: relative;
+    top: -180px; /* Sesuaikan dengan jarak vertikal yang diinginkan */
+    width: 160px; /* Atur lebar gambar */
+    height: auto;
+    margin-left: -10px;
+}
+
+.keluarga2 {
+    margin-top: -350px; /* Sesuaikan jarak atas */
+}
+
+.keluarga2 h3 {
+    font-size: 4.5rem;
+    margin-left: 600px;
+    font-family: var(--header-font);
+}
+.keluarga2 h4 {
+    margin: 0; /* Menghapus margin default */
+    margin-left: 600px;
+    font-family: var(--about-font);
+}
+
+.gambar {
+    margin-top: 270px; /* Memberikan jarak antara gambar dan teks di atasnya */
+    
+}
+
+.gambar img {
+    width: 450px; /* Sesuaikan lebar gambar sesuai kebutuhan */
+    height: auto; /* Biarkan tinggi gambar mengikuti proporsi aslinya */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text2 {
+    font-family: var(--about-font);
+    margin-left: 690px;
+    margin-top: -150px; /* Atur jarak antara gambar dan teks */
+    text-align: center; /* Pusatkan teks secara horizontal */
+}
+.text2 h5 {
+    font-family: var(--about-font);
+    margin-left: -700px;
+    margin-top: 50px;
+    text-align: center; /* Pusatkan teks secara horizontal */
+}
+.about .kiri1 {
+    position: absolute;
+    bottom: -220px;
+    left: -80px;
+}
+.about .kiri1 img {
+    width: 400px; /* Sesuaikan dengan lebar yang diinginkan */
+    height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi aslinya */
+}
+.about .kiri1 .corner-image {
+    width: 300px; /* Sesuaikan dengan lebar yang diinginkan */
+    height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi aslinya */
+    right: -760px;
+    top: -160px;
+}
+
+/* halaman3 */
+
+
+
+/* CSS for section with id "info" */
+#info {
+    position: absolute; /* Tambahkan posisi absolut */
+    height: 205vh;
+    top: 300vh; /* Letakkan di bawah "about" */
+    width: 100%; /* Lebar sesuai viewport */
+    /* background-color: #000; */
+    
+}
+
+.info .container {
+    max-width: 1200px; /* Lebar maksimum konten */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.info img.left-top {
+    width: 400px; /* Lebar gambar */
+    height: auto; /* Tinggi gambar menyesuaikan proporsi */
+    float: left; /* Mengapit gambar di sebelah kiri */
+    margin-left: -80px; /* Jarak antara gambar dengan konten lainnya */
+}
+.info img.right-top {
+    width: 400px; /* Lebar gambar */
+    margin-top: 120px;
+    height: auto; /* Tinggi gambar menyesuaikan proporsi */
+    float: left; /* Mengapit gambar di sebelah kiri */
+    margin-left: 1140px; /* Jarak antara gambar dengan konten lainnya */
+}
+
+.info h4.text {
+    margin-top: -180px; /* Atur margin-top ke nilai negatif */
+    font-family: var(--info-font);
+    margin-top: -200px;
+    font-size: 2.5rem;
+    color: #205660;
+}
+
+.text-akad h3 {
+    font-size: 2.2rem;
+    margin-left: -600px;
+    font-family: var(--info-font);
+}
+
+.text-akad h4 {
+    margin: 0; /* Menghapus margin default */
+    margin-top: 20px;
+    margin-left: -600px;
+    font-family: var(--info2-font);
+    font-size: 1.5rem;
+}
+
+.text-akad2 h3 {
+    font-size: 2.2rem;
+    margin-left: 600px;
+    margin-top: -130px;
+    font-family: var(--info-font);
+}
+.text-akad2 h4 {
+    margin: 0; /* Menghapus margin default */
+    margin-left: 600px;
+    font-family: var(--about-font);
+    margin-top: 20px;
+}
+
+.info h4.text2 {
+    margin-top: 100px; /* Atur margin-top ke nilai negatif */
+    font-family: var(--info-font);
+    margin-left: 10px;
+    font-size: 1.3rem;
+}
+
+.image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-wrapper h3 {
+    position: absolute; /* Atur posisi absolut */
+    top: 1100px; /* Geser ke bawah sejauh 10px */
+    left: 50%; /* Geser ke tengah horizontal */
+    transform: translateX(-50%); /* Pusatkan horizontal */
+    font-size: 1.5rem;
+}
+
+.image-wrapper img {
+    margin-top: 200px; /* Sesuaikan jarak antara gambar dan teks di atasnya */
+    width: 350px; /* Atur lebar gambar */
+    height: auto;
+}
+.image-wrapper h3 {
+    margin-top: -100px; /* Sesuaikan jarak antara gambar dan teks di atasnya */
+    width: 350px; /* Atur lebar gambar */
+    height: auto;
+}
+
+.location-link {
+    position: absolute; /* Atur posisi absolut */
+    top: 855px; /* Geser turun sejauh 20px dari posisi awal */
+    left: 49.5%; /* Geser ke tengah horizontal */
+    transform: translateX(-50%); /* Pusatkan horizontal */
+    width: auto; /* Atur lebar sesuai kebutuhan */
+    padding: 10px 20px; /* Atur padding untuk tampilan yang lebih baik */
+    color: #FFFF;
+    text-decoration: none; /* Hilangkan dekorasi link */
+    font-size: 1.2rem; /* Ukuran teks */
+    z-index: 1; /* Pastikan link berada di atas gambar */
+}
+.image-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-wrapper2 img {
+    margin-top: 100px; /* Sesuaikan jarak antara gambar dan teks di atasnya */
+    width: 400px; /* Atur lebar gambar */
+    height: auto;
+    margin-left: -10px;
+}
+
+.daftar-book {
+    position: absolute; /* Atur posisi absolut */
+    top: 1080px; /* Geser turun sejauh 20px dari posisi awal */
+    left: 49.5%; /* Geser ke tengah horizontal */
+    transform: translateX(-50%); /* Pusatkan horizontal */
+    width: auto; /* Atur lebar sesuai kebutuhan */
+    padding: 10px 20px; /* Atur padding untuk tampilan yang lebih baik */
+    color: #fff;
+    text-decoration: none; /* Hilangkan dekorasi link */
+    font-size: 1.2rem; /* Ukuran teks */
+    z-index: 1; /* Pastikan link berada di atas gambar */
+}
+
+.info .halaman3 {
+    position: absolute;
+    bottom: -250px;
+    left: -80px;
+    /* position: relative; */
+}
+.info .halaman3 img {
+    width: 290px; /* Sesuaikan dengan lebar yang diinginkan */
+    height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi aslinya */
+    margin-left: 50px;
+    margin-top: -400px;
+}
+.info .halaman3 .penalty-image {
+    width: 300px; /* Sesuaikan dengan lebar yang diinginkan */
+    height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi aslinya */
+    right: -760px;
+    top: -185px;
+}
+/* CSS untuk bagian "time" */
+/* Halaman 4 */
+#time {
+    position: absolute; /* Tambahkan posisi absolut */
+    height: 150vh;
+    top: 504vh; /* Letakkan di bawah "about" */
+    width: 100%; /* Lebar sesuai viewport */
+    /* background-color: #000; */
+    
+}
+
+.time .container {
+    max-width: 1200px; /* Lebar maksimum konten */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left-kiri {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: 330px;
+    height: auto;
+}
+
+.left-kanan {
+    position: absolute;
+    top: 0;
+    left: 1050px;
+    width: 330px;
+    height: auto;
+}
+
+.image-time img {
+    margin-top: 400px; /* Sesuaikan jarak antara gambar dan teks di atasnya */
+    width: 600px; /* Atur lebar gambar */
+    height: auto;
+    margin-left: 270px;
+}
+
+.image-jam img {
+    /* margin-top: 400px; Sesuaikan jarak antara gambar dan teks di atasnya */
+    width: 240px; /* Atur lebar gambar */
+    height: auto;
+    margin-left: 180px;
+    margin-top: -140px;
+}
+.image-hari img {
+    /* margin-top: 400px; Sesuaikan jarak antara gambar dan teks di atasnya */
+    width: 240px; /* Atur lebar gambar */
+    height: auto;
+    margin-left: 455px;
+    margin-top: -250px;
+}
+.image-menit img {
+    /* margin-top: 400px; Sesuaikan jarak antara gambar dan teks di atasnya */
+    width: 240px; /* Atur lebar gambar */
+    height: auto;
+    margin-left: 720px;
+    margin-top: -440px;
+}
+
+.image-time2 img {
+    margin-top: -230px; /* Sesuaikan jarak antara gambar dan teks di atasnya */
+    width: 600px; /* Atur lebar gambar */
+    height: auto;
+    margin-left: 270px;
+}
+
+.time .kiri2 {
+    position: absolute;
+    bottom: -220px;
+    left: -80px;
+}
+
+.time .kiri2 img {
+    width: 450px; /* Sesuaikan dengan lebar yang diinginkan */
+    height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi aslinya */
+    left: -320px;
+    top: -170px;
+}
+
+.time .kiri2 .corner2-image {
+    width: 350px; /* Sesuaikan dengan lebar yang diinginkan */
+    height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi aslinya */
+    left: 400px;
+    top: -140px;
+}
+
+.text-Hari {
+    position: absolute; /* Atur posisi absolut */
+    top: 470px; /* Sesuaikan posisi vertikal */
+    left: 385px; /* Geser ke tengah horizontal */
+    transform: translateX(-50%); /* Pusatkan horizontal */
+    color: #000; /* Warna teks */
+    font-size: 4rem; /* Ukuran teks */
+    z-index: 1; /* Pastikan teks berada di atas gambar */
+}
+
+.text-Hari2 {
+    position: absolute; /* Atur posisi absolut */
+    top: 550px; /* Sesuaikan posisi vertikal */
+    left: 385px; /* Geser ke tengah horizontal */
+    transform: translateX(-50%); /* Pusatkan horizontal */
+    color: #000; /* Warna teks */
+    font-size: 3rem; /* Ukuran teks */
+    z-index: 1; /* Pastikan teks berada di atas gambar */
+}
+
+.text-waktu {
+    position: absolute; /* Atur posisi absolut */
+    top: 480px; /* Sesuaikan posisi vertikal */
+    left: 665px; /* Geser ke tengah horizontal */
+    transform: translateX(-50%); /* Pusatkan horizontal */
+    color: #000; /* Warna teks */
+    font-size: 4rem; /* Ukuran teks */
+    z-index: 1; /* Pastikan teks berada di atas gambar */
+}
+
+.text-waktu2 {
+    position: absolute; /* Atur posisi absolut */
+    top: 550px; /* Sesuaikan posisi vertikal */
+    left: 659px; /* Geser ke tengah horizontal */
+    transform: translateX(-50%); /* Pusatkan horizontal */
+    color: #000; /* Warna teks */
+    font-size: 3rem; /* Ukuran teks */
+    z-index: 1; /* Pastikan teks berada di atas gambar */
+}
+
+.text-menit {
+    position: absolute; /* Atur posisi absolut */
+    top: 480px; /* Sesuaikan posisi vertikal */
+    left: 930px; /* Geser ke tengah horizontal */
+    transform: translateX(-50%); /* Pusatkan horizontal */
+    color: #000; /* Warna teks */
+    font-size: 4rem; /* Ukuran teks */
+    z-index: 1; /* Pastikan teks berada di atas gambar */
+}
+
+.text-menit2 {
+    position: relative; /* Atur posisi absolut */
+    top: -315px; /* Sesuaikan posisi vertikal */
+    left: 1370px; /* Geser ke tengah horizontal */
+    transform: translateX(-50%); /* Pusatkan horizontal */
+    color: #000; /* Warna teks */
+    font-size: 3rem; /* Ukuran teks */
+    z-index: 1; /* Pastikan teks berada di atas gambar */
+}
+
+/* Halaman 5  */
+
+#galery {
+    position: absolute; /* Tambahkan posisi absolut */
+    height: 220vh;
+    top: 645vh; /* Letakkan di bawah "about" */
+    width: 100%; /* Lebar sesuai viewport */
+    /* background-color: #000; */
+    
+}
+
+.galery .container {
+    max-width: 1200px; /* Lebar maksimum konten */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left-bingkai1 {
+    position: absolute;
+    top: 10px;
+    right: 1018px;
+    width: 400px;
+    height: auto;
+}
+.right-bingkai2 {
+    position: relative;
+    top: -35px;
+    left: 940px;
+    width: 420px;
+    height: auto;
+}
+
+.galery h4.kata {
+    position: relative;
+    margin-left: -430px;
+    font-family: var(--info-font);
+    margin-top: 200px;
+    font-size: 2.5rem;
+    color: #205660;
+}
+
+.image-bingkai5 img {
+    margin-top: -50px; /* Sesuaikan jarak antara gambar dan teks di atasnya */
+    width: 600px; /* Atur lebar gambar */
+    height: auto;
+    margin-left: 300px;
+}
+
+.image-foto1 img {
+    margin-top: -550px; /* Sesuaikan jarak antara gambar dan teks di atasnya */
+    width: 300px; /* Atur lebar gambar */
+    height: auto;
+    margin-left: 100px;
+}
+.image-foto1 .foto2 {
+    margin-top: 150px; /* Sesuaikan jarak antara gambar dan teks di atasnya */
+    width: 300px; /* Atur lebar gambar */
+    height: auto;
+    margin-left: -300px;
+}
+
+.image-foto3 img {
+    margin-top: -1185px; /* Sesuaikan jarak antara gambar dan teks di atasnya */
+    width: 300px; /* Atur lebar gambar */
+    height: auto;
+    margin-left: 470px;
+}
+.image-foto3 .foto4 {
+    margin-top: -480px; /* Sesuaikan jarak antara gambar dan teks di atasnya */
+    width: 300px; /* Atur lebar gambar */
+    height: auto;
+    margin-left: -300px;
+}
+.image-foto4 img {
+    margin-top: -1000px; /* Sesuaikan jarak antara gambar dan teks di atasnya */
+    width: 300px; /* Atur lebar gambar */
+    height: auto;
+    margin-left: 830px;
+}
+
+.image-foto4 .foto5 {
+    margin-top: -290px; /* Sesuaikan jarak antara gambar dan teks di atasnya */
+    width: 300px; /* Atur lebar gambar */
+    height: auto;
+    margin-left: -300px;
+}
+
+.image-halaman5 img {
+    margin-top: -130px; /* Sesuaikan jarak antara gambar dan teks di atasnya */
+    width: 600px; /* Atur lebar gambar */
+    height: auto;
+    margin-left: 320px;
+}
+
+.galery .halaman5 {
+    position: absolute;
+    bottom: -250px;
+    left: -80px;
+    /* position: relative; */
+}
+.galery .halaman5 img {
+    width: 300px; /* Sesuaikan dengan lebar yang diinginkan */
+    height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi aslinya */
+    margin-left: 70px;
+    top: -248px;
+}
+
+.galery .halaman5 .penalty2-image {
+    width: 300px; /* Sesuaikan dengan lebar yang diinginkan */
+    height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi aslinya */
+    right: -670px;
+    top: -248px;
+}
+
+/* halaman 6 */
+
+#protocol {
+    position: absolute; /* Tambahkan posisi absolut */
+    height: 350vh;
+    top: 645vh; /* Letakkan di bawah "about" */
+    width: 100%; /* Lebar sesuai viewport */
+    /* background-color: #000; */
+    
+}
+
+.protocol .container {
+    max-width: 100px; /* Lebar maksimum konten */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.protocol .left-kiri1 {
+    position: relative;
+    left: -380px;
+    width: 330px;
+    height: auto;
+    top: 1425px;
+}
+
+
+.left-kanan2 {
+    position: relative;
+    top: 1090px;
+    left: 660px;
+    width: 330px;
+    height: auto;
+}
+
+.protocol h4.kata2 {
+    position: absolute;
+    margin-left: 100px;
+    font-family: var(--info-font);
+    margin-top: 850px;
+    font-size: 2.7rem;
+    color: #205660;
+}
+
+.protocol h4.kata3 {
+    margin-top: 100px; /* Atur margin-top ke nilai negatif */
+    font-family: var(--info-font);
+    margin-left: -540px;
+    font-size: 1.3rem;
+    position: relative;
+    top: 950px;
+    left: 300px;
+}
+
+.col-auto.mx-auto {
+    /* Atur tata letak kolom menjadi otomatis di tengah */
+    text-align: center; /* Pusatkan teks secara horizontal */
+}
+
+.halaman6 {
+    /* Atur tata letak gambar */
+    display: block; /* Menjadikan gambar sebagai elemen blok */
+    margin-top: 1200px; /* Berikan jarak atas antara teks dan gambar */
+    width: 600px;
+    height: auto;
+    left: 25px;
+}
+
+.protocol .halaman6-bingkai {
+    position: absolute;
+    bottom: -220px;
+    left: -80px;
+}
+
+.protocol .halaman6-bingkai img {
+    width: 450px;
+    height: auto;
+    left: -10px;
+    top: -170px;
+}
+
+.protocol .halaman6-bingkai .corner3-image {
+    width: 350px; /* Sesuaikan dengan lebar yang diinginkan */
+    height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi aslinya */
+    left: 655px;
+    top: -155px;
+}
+
+/* halaman 7 */
+
+#pesan {
+    position: absolute; /* Tambahkan posisi absolut */
+    height: 150vh;
+    top: 995vh; /* Letakkan di bawah "about" */
+    width: 100%; /* Lebar sesuai viewport */
+    /* background-color: #000; */
+    
+}
+
+.pesan .container {
+    max-width: 1200px; /* Lebar maksimum konten */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left-bingkai6 {
+    position: absolute;
+    top: -55px;
+    right: 1000px;
+    width: 400px;
+    height: auto;
+}
+
+.right-bingkai7 {
+    position: relative;
+    top: -110px;
+    left: 885px;
+    width: 420px;
+    height: auto;
+}
+
+.pesan h4.kata4 {
+    position: absolute  ;
+    margin-left: 100px;
+    font-family: var(--info-font);
+    margin-top: -200px;
+    font-size: 2.7rem;
+    color: #205660;
+    left: 430px;
+}
+
+.col-auto.mx-auto {
+    /* Atur tata letak kolom menjadi otomatis di tengah */
+    text-align: center; /* Pusatkan teks secara horizontal */
+}
+
+.halaman7 {
+    /* Atur tata letak gambar */
+    display: block; /* Menjadikan gambar sebagai elemen blok */
+    margin-top: 100px; /* Berikan jarak atas antara teks dan gambar */
+    width: 1100px;
+    height: auto;
+    left: 15px;
+}
+
+.pesan .halaman7-bingkai {
+    /* position: absolute; */
+    bottom: -250px;
+    left: -100px;
+    position: relative;
+    top: 55px;
+}
+.pesan .halaman7-bingkai img {
+    width: 300px;
+    height: auto;
+    margin-left: -10px;
+    top: -321px;
+}
+
+.pesan .halaman7-bingkai .penalty7-image {
+    width: 300px; /* Sesuaikan dengan lebar yang diinginkan */
+    height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi aslinya */
+    right: -800px;
+    top: -320px;
+}
+
+/* halaman 8 */
+
+
+#hadiah {
+    position: absolute; /* Tambahkan posisi absolut */
+    height: 120vh;
+    top: 1145vh; /* Letakkan di bawah "about" */
+    width: 100%; /* Lebar sesuai viewport */
+    /* background-color: #000; */
+    overflow: hidden;
+    
+}
+
+.hadiah .container {
+    max-width: 1200px; /* Lebar maksimum konten */
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.hadiah .kiri-akhir {
+    position: relative;
+    left: -380px;
+    width: 330px;
+    height: auto;
+    top: -0px;
+}
+
+
+.kanan-akhir2 {
+    position: relative;
+    top: 0px;
+    left: 380px;
+    width: 330px;
+    height: auto;
+}
+
+.hadiah h4.kata10 {
+    position: absolute;
+    margin-left: 179px;
+    font-family: var(--info-font);
+    margin-top: -200px;
+    font-size: 2.7rem;
+    color: #205660;
+}
+
+.hadiah h4.kata11 {
+    margin-top: 100px; /* Atur margin-top ke nilai negatif */
+    font-family: var(--info-font);
+    margin-left: -540px;
+    font-size: 1.3rem;
+    position: relative;
+    top: -100px;
+    left: 450px;
+    width: 750px;
+    height: auto;
+    font-family: var(--akhir-font);
+}
+
+.col-auto.mx-auto {
+    /* Atur tata letak kolom menjadi otomatis di tengah */
+    text-align: center; /* Pusatkan teks secara horizontal */
+}
+
+.halaman8 {
+    /* Atur tata letak gambar */
+    display: block; /* Menjadikan gambar sebagai elemen blok */
+    margin-top: 150px; /* Berikan jarak atas antara teks dan gambar */
+    width: 500px;
+    height: auto;
+    left: 75px;
+}
+
+.hadiah .halaman8-bingkai {
+    position: absolute;
+    bottom: -220px;
+    left: -80px;
+}
+
+.hadiah .halaman8-bingkai img {
+    width: 450px;
+    height: auto;
+    left: -10px;
+    top: -178px;
+}
+
+.hadiah .halaman8-bingkai .corner4-image {
+    width: 350px; /* Sesuaikan dengan lebar yang diinginkan */
+    height: auto; /* Biarkan tinggi gambar menyesuaikan proporsi aslinya */
+    left: 655px;
+    top: -175px;
+}
